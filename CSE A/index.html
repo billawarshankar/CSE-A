@@ -7,6 +7,37 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1 class="container">Hello! Guys </h1>
+      <div class="card">
+        <h2>Login</h2>
+        <form id="loginForm">
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="mobile">Mobile Number</label>
+                <input type="tel" id="mobile" name="mobile" required pattern="[0-9]{10}">
+            </div>
+            <div class="form-group">
+                <label for="age">Age</label>
+                <input type="number" id="age" name="age" required min="1">
+            </div>
+            <button type="submit" class="submit-btn">Submit</button>
+        </form>
+        <div id="successMsg" class="success-message" style="display:none;">Login Successful!</div>
+    </div>
+    <script>
+        const form = document.getElementById('loginForm');
+        const successMsg = document.getElementById('successMsg');
+        form.addEventListener('submit', function(e) {
+            e.preventDefault();
+            successMsg.style.display = 'block';
+        });
+    </script>
 </body>
+
 </html>
