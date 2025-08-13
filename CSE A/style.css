@@ -1,5 +1,72 @@
+body {
+    background: linear-gradient(135deg, #74ebd5 0%, #ACB6E5 100%);
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .container{
     display: flex;
     flex-direction: column;
     color: blue;
+}
+.card {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 8px 32px rgba(44, 62, 80, 0.2);
+    padding: 32px 24px;
+    max-width: 350px;
+    width: 100%;
+    text-align: center;
+}
+.card h2 {
+    margin-bottom: 24px;
+    color: #2d3e50;
+}
+.form-group {
+    margin-bottom: 18px;
+    text-align: left;
+}
+.form-group label {
+    display: block;
+    margin-bottom: 6px;
+    color: #34495e;
+    font-weight: 500;
+}
+.form-group input {
+    width: 100%;
+    padding: 8px 10px;
+    border: 1px solid #bfc9d2;
+    border-radius: 6px;
+    font-size: 15px;
+    transition: border-color 0.2s;
+}
+.form-group input:focus {
+    border-color: #74ebd5;
+    outline: none;
+}
+.submit-btn {
+    background: linear-gradient(90deg, #74ebd5 0%, #ACB6E5 100%);
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 0;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(44, 62, 80, 0.08);
+    transition: background 0.2s;
+}
+.submit-btn:hover {
+    background: linear-gradient(90deg, #ACB6E5 0%, #74ebd5 100%);
+}
+.success-message {
+    margin-top: 18px;
+    color: #27ae60;
+    font-weight: 600;
+    font-size: 16px;
+    display: none;
 }
